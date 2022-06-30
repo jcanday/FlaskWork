@@ -9,4 +9,4 @@ class Config:
     FLASK_ENV = os.environ.get('FLASK_ENV')
     SECRET_KEY = os.environ.get('SECRET_KEY') or "Its a secret"
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEPLOY_DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
-    SQLALCHEMY_TRACK_MODIFICATION = False #turns off updates
+    SQLALCHEMY_TRACK_MODIFICATIONS = False #turns off updates
